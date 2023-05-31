@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url("../backgroundImagejpg)"" no-repeat center;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/signUp">
+        	<h1>냉장고를 지켜조</h1><br/>
+            <h1>회원가입 페이지입니다</h1>
+            <div class="form-group">
+                <label for="inputId4">아이디</label>
+                <input type="text" class="form-control" id="inputId4" name="userId" placeholder="사용자 아이디">
+                
+            </div>
+            <div class="form-group">
+                <label for="inputPassword4">비밀번호</label>
+                <input type="password" class="form-control" id="inputPassword4" name="userPw" placeholder="사용자 비밀번호">
+            </div>
+            <div class="form-group">
+            	<label for="inputPassword4">비밀번호확인</label>
+            	<input type="password" class="form-control" id=inputpassword4" name="uswePwCheck" placeholder="사용자 비밀번호 재확인">
+            </div>
+            <div class="form-group">
+                <label for="inputEmail4">이메일주소</label>
+                <input type="text" class="form-control" id="inputEmail4" name="Email" placeholder="사용자 이메일">
+            </div>
+            <div class="form-group">
+                <label for="inputNickName">닉네임</label>
+                <input type="text" class="form-control" id="inputNickName" name="userNickName" placeholder="사용자 닉네임">
+            </div>
+            <button type="submit" class="btn btn-primary">가입 하기</button>
+        </form>
+    </div>
+</body>
+</html>
